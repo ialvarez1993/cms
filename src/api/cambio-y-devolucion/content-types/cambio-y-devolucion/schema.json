@@ -1,0 +1,38 @@
+{
+  "kind": "singleType",
+  "collectionName": "cambios_y_devoluciones",
+  "info": {
+    "singularName": "cambio-y-devolucion",
+    "pluralName": "cambios-y-devoluciones",
+    "displayName": "Pagina De Cambios y Devoluciones Contenido",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": true
+    },
+    "content": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "blocks",
+      "required": true
+    }
+  }
+}

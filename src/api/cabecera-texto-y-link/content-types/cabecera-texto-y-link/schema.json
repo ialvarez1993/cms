@@ -1,0 +1,43 @@
+{
+  "kind": "singleType",
+  "collectionName": "cabecera_textos_y_links",
+  "info": {
+    "singularName": "cabecera-texto-y-link",
+    "pluralName": "cabecera-textos-y-links",
+    "displayName": "Cabecera - Texto y Links",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "data": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "json"
+    },
+    "logocabecera": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

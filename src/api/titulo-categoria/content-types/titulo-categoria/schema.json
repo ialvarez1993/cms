@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "titulo_categorias",
+  "info": {
+    "singularName": "titulo-categoria",
+    "pluralName": "titulo-categorias",
+    "displayName": "Home Titulo Categoria",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "TituloCategoria": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}
