@@ -14,6 +14,34 @@ export interface SharedCta extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedInternalCategory extends Struct.ComponentSchema {
+  collectionName: 'components_shared_internal_categories';
+  info: {
+    displayName: 'internalCategory';
+    icon: 'archive';
+  };
+  attributes: {
+    allowSubcategoriesDropdown: Schema.Attribute.Boolean &
+      Schema.Attribute.DefaultTo<true>;
+    categoryId: Schema.Attribute.Integer & Schema.Attribute.Unique;
+    label: Schema.Attribute.String;
+    maxNumberOfSubcategories: Schema.Attribute.Integer &
+      Schema.Attribute.DefaultTo<6>;
+  };
+}
+
+export interface SharedInternalPage extends Struct.ComponentSchema {
+  collectionName: 'components_shared_internal_pages';
+  info: {
+    displayName: 'internalPage';
+    icon: 'calendar';
+  };
+  attributes: {
+    label: Schema.Attribute.String & Schema.Attribute.Required;
+    slug: Schema.Attribute.String;
+  };
+}
+
 export interface SharedSlide extends Struct.ComponentSchema {
   collectionName: 'components_shared_slides';
   info: {
@@ -36,6 +64,8 @@ declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
       'shared.cta': SharedCta;
+      'shared.internal-category': SharedInternalCategory;
+      'shared.internal-page': SharedInternalPage;
       'shared.slide': SharedSlide;
     }
   }

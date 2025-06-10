@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2024-12-09T19:25:29.328Z"
+    "x-generation-date": "2025-06-10T19:06:02.540Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -12609,6 +12609,18 @@
                 ],
                 "example": "string or id"
               },
+              "internalPages": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/SharedInternalPageComponent"
+                }
+              },
+              "internalCategories": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/SharedInternalCategoryComponent"
+                }
+              },
               "locale": {
                 "type": "string"
               },
@@ -13273,6 +13285,18 @@
               }
             }
           },
+          "internalPages": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SharedInternalPageComponent"
+            }
+          },
+          "internalCategories": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SharedInternalCategoryComponent"
+            }
+          },
           "createdAt": {
             "type": "string",
             "format": "date-time"
@@ -13451,6 +13475,18 @@
                     }
                   }
                 },
+                "internalPages": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SharedInternalPageComponent"
+                  }
+                },
+                "internalCategories": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SharedInternalCategoryComponent"
+                  }
+                },
                 "createdAt": {
                   "type": "string",
                   "format": "date-time"
@@ -13515,6 +13551,40 @@
           },
           "meta": {
             "type": "object"
+          }
+        }
+      },
+      "SharedInternalPageComponent": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number"
+          },
+          "label": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          }
+        }
+      },
+      "SharedInternalCategoryComponent": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number"
+          },
+          "label": {
+            "type": "string"
+          },
+          "allowSubcategoriesDropdown": {
+            "type": "boolean"
+          },
+          "maxNumberOfSubcategories": {
+            "type": "integer"
+          },
+          "categoryId": {
+            "type": "integer"
           }
         }
       },

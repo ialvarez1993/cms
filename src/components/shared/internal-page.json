@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_shared_internal_pages",
+  "info": {
+    "displayName": "internalPage",
+    "icon": "calendar"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "string",
+      "required": false
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_shared_internal_categories",
+  "info": {
+    "displayName": "internalCategory",
+    "icon": "archive"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "allowSubcategoriesDropdown": {
+      "type": "boolean",
+      "default": true
+    },
+    "maxNumberOfSubcategories": {
+      "type": "integer",
+      "default": 6
+    },
+    "categoryId": {
+      "type": "integer",
+      "required": false,
+      "unique": true
+    }
+  },
+  "config": {}
+}
